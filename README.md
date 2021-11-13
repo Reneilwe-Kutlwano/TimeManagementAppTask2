@@ -1,7 +1,7 @@
-# TimeManagementAppTask2
+# TimeManagementAppPOE
 #### ============TABLE OF CONTENTS===============
 
-1. Feedback and implementation from task 1
+1. Feedback and implementation from task 2
 2. Overview.
 3. Features of the project.
 4. Development dependencies.
@@ -9,8 +9,8 @@
 6. Running of the project.
 7. Contributors and sources.
 
-#### =================FEEDBACK AND IMPLEMENTATION FROM TASK 1========================
-In task 1 according to the feedback  had recieved there was a bit of an issue with regards to the fact that I did not include any LINQ functionalities. To rectify that problem all I did was include the LINQ within my tuple list, in which all of the user data/ modules are stored. The LINQ I added was in the form of the "elemenetAt" function for the tuple that essentially fetches all of the user data and stores it within the tuple list. This is the only feedback I had recieved with regards to my project.
+#### =================FEEDBACK AND IMPLEMENTATION FROM TASK 2========================
+In task 2 according to the feedback  had recieved there was a bit of an issue with regards to the fact that I did not include any LINQ functionalities. To rectify that problem all I did was include the LINQ within my tuple list, in which all of the user data/ modules are stored. The LINQ I added was in the form of the "elemenetAt" function for the tuple that essentially fetches all of the user data and stores it within the tuple list. There was also a minor issue with regards to the submission of the Read me file, however that got rectified. This is the only feedback I had recieved with regards to my project.
 
 
 #### =================OVERVIEW===================
@@ -22,19 +22,21 @@ The motivation behind this application was to create something students can use,
 This project includes the following:
 
 1. A login page, provided the user has already registered, if not they will be redirected to a registration page.
-2. Window that requests the user to enter their module code, name, number of credits, class hours per week, number of weeks and the start date for the first week.(This is where the user can add multiple modules if they have more than one module). All of this stored will be stored in the database and displayed in the data grid.
+2. Window that requests the user to enter their module code, name, number of credits, class hours per week, number of weeks and the start date for the first week.(This is where the user can add multiple modules if they have more than one module). All of this stored will be stored in the database and displayed in the gridview.
 3. Multi-threading to handle the database queries/ processes.
-4. Window that requests the user to enter the number of hours they have spent of a specific module.
-5. Custom library that calculates the hours of self study for each module the user entered and the number of hours remain after they have entered how many hours they spent on a module.(This uses LINQ)
-6. User input validation to make sure the correct type of data is entered.
-7. Displaying of the students modules and the hours that remain of self study..
+4. Window that asks the user whether they would like to set a day aside for a specific module and get a reminder of that module when they log in.
+5. Window that requests the user to enter the number of hours they have spent of a specific module.
+6. Custom library that calculates the hours of self study for each module the user entered and the number of hours remain after they have entered how many hours they spent on a module.(This uses LINQ)
+7. User input validation to make sure the correct type of data is entered.
+8. Displaying of the students modules and the hours that remain of self study..
+9. SQL database is already connected to the application and functioning.
 
 #### ============DEVELOPMENT DEPENDENCIES=============
 1. Microsoft.NETCore.App
 2. ADO.NET connected layer.
 3. Visual studio 2019.
-4. Visual studio windows presentation framework.
-5. Class library (WPF.NET Framework).
+4. Visual studio ASP.NET Framework
+5. Class library (.NET Framework).
 6. SQL server management studio 2019.
 
 #### ===========TECHNOLOGY + SOFTWARE REQUIRED==========
@@ -48,23 +50,24 @@ This project includes the following:
    Windows NT 4.0.
 3. Microsoft visual studio 2019 version 16.9.4.
 4. Microsoft.NET framework version 4.8.04084..
-5. Windows presentation framework.
-6. Class library(WPF.NET Framework).
+5. ASP.NET Framework.
+6. Class library(.NET Framework).
 7. SQL server management studio 2019.
 
 #### ============RUNNING OF THE PROJECT===================
-1. Download the zipped folder(TimeManagementApp.zip)
+1. Download the zipped folder(Time Management POE.zip)
 2.  In the file explorer unzip the zipped file by extracting it.
 3.  Open the unzipped file.
-4.  Click the TimeManagementApp file to open it.
-5.  Open the folder that says TimeManagementApp.Sln.
+4.  Click the Time Management POE file to open it.
+5.  Open the folder that says Time Management POE.Sln.
 6.  Visual studio 2019 will open now.
-7.  Once the project is open in visual studio go to server explorer on the left hand side, under data connections click on the data connection called laptop-  d2phaf11.userDeatails to open the connection. There should be a green plug next to the connection to illustrate it is connected.
-8.  Go to the MainWindow.xaml.cs and click the green button called start on the visual studio toolbar to run the program.
-9.  The programme starts with a login page the redirect you to window 1 it will also ask you to input data.
+7.  Once the project is open in visual studio go to server explorer on the left hand side, under data connections click on the data connection called userDeatails_20111588ConnectionString (Time Management Poe) to open the connection. There should be a green plug next to the connection to illustrate it is connected.
+8.  Go to the WelcomePage.aspx and click the green button called start on the visual studio toolbar to run the program.
+9.  The programme starts with a login page then redirect you to DaySetAsidePage.aspx it will also ask you to input data.
 
 #### =============CONTRIBUTORS + SOURCES===================
 1. Reneilwe-Kutlwano Motlhabi.
 2. https://www.geeksforgeeks.org/.
 3. Troelsen, A. and Japikse, P. 2017. Pro C# 7 with .NET and .NET Core. 8th ed. Minnesota and Ohio: Andrew and Philip.
 4. https://www.tutorialsteacher.com/csharp/csharp-tuple.
+5. Prajapati, V. 2016. Create a simple event reminder app using ASP.NET web form. C# Corner, 5 May 2016. [Online]. Available at: https://www.c-sharpcorner.com/article/create-a-simple-event-reminder-app-using-Asp-Net-webform/. [Accessed 12 November 2021].
